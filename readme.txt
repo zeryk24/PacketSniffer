@@ -1,2 +1,4 @@
+Spuštění:
+
 make
-sudo ./sniffer
+sudo ./PacketSniffer

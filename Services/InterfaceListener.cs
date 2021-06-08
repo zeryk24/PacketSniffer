@@ -37,7 +37,7 @@ namespace PacketSniffer
             }
             catch(Exception)
             {
-                Console.WriteLine("Chyba rozhraní");
+                Console.WriteLine("Interface error");
                 return;
             }
             
@@ -59,7 +59,7 @@ namespace PacketSniffer
             bool all = !Config.Instance.Icmp && !Config.Instance.Tcp && !Config.Instance.Udp;
 
             if (!packetService.ProccessPacket(packet, time, len)) 
-                Console.WriteLine("Neznámý packet");
+                Console.WriteLine("Unknown packet");
             readNumber++;
         }
 

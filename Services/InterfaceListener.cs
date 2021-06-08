@@ -31,7 +31,16 @@ namespace PacketSniffer
             if (string.IsNullOrEmpty(Config.Instance.Intface))
                     return;
 
-            device.Open();
+            try
+            {
+                device.Open();
+            }
+            catch(Exception)
+            {
+                Console.WriteLine("Chyba rozhraní");
+                return;
+            }
+            
             device.OnPacketArrival += new PacketArrivalEventHandler(device_OnPacketArrival);
             device.Capture();
 

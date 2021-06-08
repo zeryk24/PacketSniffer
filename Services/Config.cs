@@ -11,5 +11,6 @@ namespace PacketSniffer
         public bool Udp { get; set; }
         public bool Icmp { get; set; }
         public int Num { get; set; }
+        public bool All => !Icmp && !Tcp && !Udp;
     }
 }

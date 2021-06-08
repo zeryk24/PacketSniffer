@@ -1,5 +1,5 @@
-
 using CommandLine;
+
 namespace PacketSniffer
 {
     public class Options

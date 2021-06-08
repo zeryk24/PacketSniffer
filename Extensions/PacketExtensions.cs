@@ -15,7 +15,8 @@ namespace PacketSniffer
             var buffer = new StringBuilder();
             var bytes = "";
             var ascii = "";
-            
+
+
             buffer.AppendFormat("{0} T {1} {2} : {3} > {4} : {5}, length {6} bytes\n", packetInfo.Time.ToString("yyyy:MM:dd"), packetInfo.Time.ToString("HH:mm:ss.fffzzz"),
                         packetInfo.IpPacket.SourceAddress, packetInfo.SourcePort, packetInfo.IpPacket.DestinationAddress, packetInfo.DestinationPort, packetInfo.Len);
 

@@ -10,5 +10,6 @@ namespace PacketSniffer
         public ushort? SourcePort{ get; set; }
         public ushort? DestinationPort { get; set; }
         public int Len { get; set; }
+        public Packet Packet { get; internal set; }
     }
 }

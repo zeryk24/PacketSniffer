@@ -4,4 +4,4 @@ Výpis možných rozhraní pro čtení:
 dotnet run
 
 Výpis nápovědy:
-dotnet run -- -h
+sudo dotnet run -- -h
